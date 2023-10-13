@@ -43,5 +43,24 @@ button:hover {
   flex-direction: column;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
 
+.footer div {
+  padding: 42px;
+}
+
+.footer div:hover {
+  background-color: azure;
+  
+}
 
