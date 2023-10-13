@@ -1,0 +1,30 @@
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: rgb(255, 113, 113);
+}
+
+.dropdown {
+  display: none;
+  width: 106px;
+}
+
+.dropdown a {
+  
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
