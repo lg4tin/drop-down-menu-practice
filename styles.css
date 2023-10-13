@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 button {
   background-color: red;
   color: white;
@@ -8,23 +12,36 @@ button {
   transition: 1s;
 }
 
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+}
+
 button:hover {
-  background-color: rgb(255, 113, 113);
+  background-color: rgb(95, 79, 79);
 }
 
 .dropdown {
   display: none;
   width: 106px;
+  margin-left: 42px;
 }
 
 .dropdown a {
-  
   background-color: rgb(228, 228, 228);
   padding: 20px;
   text-align: center;
 }
 
-.show {
-  display: block;
+.dropdown a:hover {
+  background-color: aqua;
 }
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
