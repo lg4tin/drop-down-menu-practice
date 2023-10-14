@@ -31,8 +31,14 @@ const dropdownBtn = document.querySelector('.btn');
 
     
     const slideshow = setInterval(() => {
-      image.src = pictures[i]
-    }, 1000)
+      if(currentIndex <= 6) {
+        currentIndex++
+      } else {
+        currentIndex = 0;
+      }
+      image.src = pictures[currentIndex]
+      circles()
+    }, 5000)
   
 
     function next() {
@@ -53,4 +59,14 @@ const dropdownBtn = document.querySelector('.btn');
       image.src = pictures[currentIndex];
     }
 
-   
+    const inputs = document.querySelectorAll('.circles button')
+
+    function circles() {
+      inputs[currentIndex].checked = true;
+    }
+
+    inputs.forEach(input => {
+      input.addEventListener('click', () => {
+        image.src = pictures[input]
+      })
+    })
