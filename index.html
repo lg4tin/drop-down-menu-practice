@@ -21,24 +21,21 @@
     <a href="#contact" class="hi">Contact</a>
   </div>
 
+  <div class="main">
+    <div class="picture">
+      <img src="pics/bobby-iv-NzBbzlPbO5c-unsplash.jpg" alt="" id="image">
+    </div>
+  </div>
+
+  <button onclick="last()"><---</button>
+  <button onclick="next()">---></button>
+
   <footer class="footer">
     <div>1</div>
     <div>2</div>
     <div>3</div>
   </footer>
 
-  <script>
-    const dropdownBtn = document.querySelector('.btn');
-    const dropdownList = document.querySelector('.dropdown');
-    dropdownBtn.addEventListener('click', () => {
-      dropdownList.classList.toggle('show');
-    })
-
-    window.onclick = e => {
-      if(!event.target.matches('.btn')) {
-        dropdownList.classList.remove('show');
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

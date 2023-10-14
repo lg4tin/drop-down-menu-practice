@@ -2,6 +2,10 @@ body {
   margin: auto;
 }
 
+img {
+  height: 500px;
+}
+
 button {
   background-color: red;
   color: white;
