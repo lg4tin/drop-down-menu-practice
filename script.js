@@ -36,8 +36,11 @@ const dropdownBtn = document.querySelector('.btn');
       } else {
         currentIndex = 0;
       }
-      image.src = pictures[currentIndex]
-      circles()
+      image.src = pictures[currentIndex];
+      inputs[currentIndex].textContent = 'hi';
+      setInterval(() => {
+        inputs[currentIndex].textContent = '0';
+      }, 5000);
     }, 5000)
   
 
@@ -61,12 +64,14 @@ const dropdownBtn = document.querySelector('.btn');
 
     const inputs = document.querySelectorAll('.circles button')
 
-    function circles() {
-      inputs[currentIndex].checked = true;
-    }
+    
 
-    inputs.forEach(input => {
+    /*inputs.forEach(input => {
       input.addEventListener('click', () => {
         image.src = pictures[input]
       })
-    })
+    })*/
+
+    function choosePicture(index) {
+      image.src = pictures[index];
+    }
